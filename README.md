@@ -1,6 +1,6 @@
 # MiBaik
 Penghitung waktu saat merebus mi instan.
-Simple timer mobile web app for boiling your instant noodle.
+Simple timer mobile web app when you boiling instant noodle.
 
 Desain icon dan latar oleh:
 http://www.freepik.com Designed by Freepik
