@@ -39,7 +39,7 @@ myApp.controller('timerCtrl', function($scope, $timeout){
     };
     
 
-    var audio = new Audio('../sound/beep.wav');
+    var audio = new Audio('/../MiBaik/www/sound/beep.wav');
 
 
     var myTimerVariable;
