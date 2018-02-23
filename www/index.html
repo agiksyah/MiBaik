@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Mi Baik</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- service worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>
+    
+    <link rel="icon" href="img/icon.png">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="js/progressbar.js"></script>
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="timerApp" ng-controller="timerCtrl">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">MiBaik</h1>
+      </ion-header-bar>
+      <ion-content>
+          
+          <div id="bigCircle">
+          <div class="progress-wrapper">
+            <div class="progress ng-cloak" ng-style="getStyle()">{{myTimer.value}}</div>
+            <div 
+                round-progress
+                max="myTimerFixed"
+                current="myTimer.value"
+                color="#7f0e0e"
+                bgcolor="rgba(0, 0, 0, 0.15)"
+                semi="isSemi"
+                rounded="rounded"
+                stroke="20"
+                clockwise="clockwise"
+                responsive="true"
+                duration="500"
+                offset="0"
+                animation-delay="0">
+
+                <svg>
+                    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                        <stop offset="5%"  stop-color="green"/>
+                        <stop offset="95%" stop-color="gold"/>
+                    </linearGradient>
+                </svg>
+            </div>
+          </div>
+        </div>
+          <div id="inputArea">
+          <label class="item item-input">
+            <span class="input-label">Hitung detik:
+              <input type="number" ng-model="myTimer.value" ng-change="myTimerFixed=myTimer.value">
+            </span>
+            
+            </label>
+          </div>
+          <div id = "btn">
+          <button class="button button-positive" ng-click = "start()" ng-disabled="myTimer.startBtn">Start</button>
+          <button class="button button-positive" ng-click="reset()" ng-disabled="myTimer.resetBtn">Reset</button>
+          <button class="button button-positive" ng-click = "stop()" ng-disabled="myTimer.stopBtn">Stop</button>
+            </div>
+          
+      </ion-content>
+    </ion-pane>
+  </body>
+</html>
