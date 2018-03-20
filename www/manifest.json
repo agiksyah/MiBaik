@@ -27,6 +27,6 @@
   	"start_url": "./?homescreen=1",
 	"display": "standalone",
 	"orientation": "portrait",
-	"background_color": "#FFFF00",
+	"background_color": "#272822",
 	"theme_color": "#FFFF00"
 }

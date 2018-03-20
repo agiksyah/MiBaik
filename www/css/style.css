@@ -1,7 +1,6 @@
 /* Empty. Add your own CSS if you like */
 ion-content{
-    background: yellow;
-    background-image: url(../img/noodle.png);
+    background: #272822;
     background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
@@ -17,7 +16,7 @@ ion-content{
     position: absolute;
     font-size: 50px;
     line-height: 1;
-    color: #7f0e0e;
+    color: #8F5D23;
     font-family: 'Orbitron', sans-serif;
 }
 
@@ -61,7 +60,7 @@ input {
 
 #btn button {
     border-radius: 500px;
-    background-color: blue;
+    background-color: #413B36;
     width: 27%;
-    box-shadow: 3px 0px #888888;
+    box-shadow: 3px 0px #413B30;
 }
