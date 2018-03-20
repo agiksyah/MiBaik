@@ -10,5 +10,5 @@ Desain icon dan latar oleh:
 http://www.freepik.com Designed by Freepik
 https://vecteezy.com Designed by Vecteezy
 
-<a href="https://cdn.rawgit.com/agiksyah/MiBaik/28d9def0/www/index.html">Demo</a>
+<a href="https://cdn.rawgit.com/agiksyah/MiBaik/75913517/www/index.html">Demo</a>
 
