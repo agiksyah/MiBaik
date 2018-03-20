@@ -59,7 +59,7 @@ myApp.controller('timerCtrl', function($scope, $timeout){
 
     $scope.start = function(){
         if ($scope.myTimer.value==0) {
-            alert('you cannot start from 0');
+            alert('Kamu tidak bisa mulai dari 0 !');
             return false;
         }else{
         $scope.myTimer.startBtn = true;
@@ -82,7 +82,7 @@ myApp.controller('timerCtrl', function($scope, $timeout){
     
     var complete = function(forceAbort){
         if(forceAbort){
-            alert('You abort the timer');
+            alert('Hitungan dihentikan !');
         } else {
             
         }
@@ -93,7 +93,7 @@ myApp.controller('timerCtrl', function($scope, $timeout){
 
     var reset = function(reset){
         if(reset){
-            alert('You reset the timer');
+            alert('Waktu direset !');
         } else {
             
         }

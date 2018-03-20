@@ -60,7 +60,11 @@ input {
 
 #btn button {
     border-radius: 500px;
+<<<<<<< HEAD
     background-color: #413B36;
+=======
+    background-color: #7f0e0e;
+>>>>>>> e5de54094592d41d61185f4ec68cebd0dab44a01
     width: 27%;
     box-shadow: 3px 0px #413B30;
 }
