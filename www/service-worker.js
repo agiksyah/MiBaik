@@ -3,17 +3,17 @@ importScripts('./cache-polyfill.js');
 
 var cacheName = 'cache-v1';
 var cacheFiles = [
-	'/',
-	'index.html',
-	'index.html?homescreen=1',
-	'?homescreen=1',
+	'./',
+	'./index.html',
+	'./index.html?homescreen=1',
+	'./?homescreen=1',
 	'https://fonts.googleapis.com/css?family=Orbitron',
-	'css/style.css',
-	'js/app.js',
-	'js/progressbar.js',
-	'sound/beep.wav',
-	'app.js',
-	'manifest.json'
+	'./css/style.css',
+	'./js/app.js',
+	'./js/progressbar.js',
+	'./sound/beep.wav',
+	'./app.js',
+	'./manifest.json'
 ]
 
 self.addEventListener('install', function(event) {
