@@ -12,6 +12,7 @@ var cacheFiles = [
 	'js/app.js',
 	'js/progressbar.js',
 	'sound/beep.wav',
+	'app.js',
 	'manifest.json'
 ]
 
